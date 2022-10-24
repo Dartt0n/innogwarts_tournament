@@ -5,32 +5,32 @@ Harry Polis, Hermione Grannopark, Ron Weasinno and others from Hogwartolis appli
 
 In the input.txt file you will have the following content separated by a new line:
 
-1. The number $N$ ($1 \le N \le 10$), which is the number of teams in the game.
+1. The number $N$ (1<=N<=10), which is the number of teams in the game.
 
-2. $N$ lines, each line should contain a unique magician name with length $L$ ($2 \le L \le 20$) made of only English letters and should begin with capital letter. Each of those magician names should correspond to the team number from $0$ till $N−1$, which was chosen by this team to become the head of the club.
+2. $N$ lines, each line should contain a unique magician name with length $L$ (2 <= L <= 20) made of only English letters and should begin with capital letter. Each of those magician names should correspond to the team number from $0$ till N−1, which was chosen by this team to become the head of the club.
 
-3. The number of the players $M$ ($N \le M \le 100$). After this you will have $M*4$ lines, each line will represent a $player_i$ information:
-    - The unique name of the player $name_i$ with length $L$ ($2 \le L \le 20$) should contain only English letters and begin with capital letter.
-    - Team number for this player $t_i$ ($0 \le t_i < N$).
-    - The power of the player $p_i$ ($0 \le p_i \le 1000$), which is integer value.
-    - The visibility of the player $v_i$ ($True$/$False$) 
+3. The number of the players $M$ (N <= M <= 100). After this you will have M*4 lines, each line will represent a $player_i$ information:
+    - The unique name of the player $name_i$ with length $L$ (2 <= L <= 20) should contain only English letters and begin with capital letter.
+    - Team number for this player $t_i$ (0 <= $t_i$ < N).
+    - The power of the player $p_i$ (0 <= $p_i$ <= 1000), which is integer value.
+    - The visibility of the player $v_i$ (True/False) 
 
-4. Sequence of actions for players $S$ ($0 \le S \le 1000$) followed on the same line by 1 or 2 player names separated by single spaces. Not each player is guaranteed to have actions. Next actions are applicable:
+4. Sequence of actions for players $S$ (0 <= S <= 1000) followed on the same line by 1 or 2 player names separated by single spaces. Not each player is guaranteed to have actions. Next actions are applicable:
 
-    - $attack$ $name_i$ $name_j$
-        - if $p_i>p_j$, then playeri will gain $p_i−p_j$ power and $player_j$ will have no power left and further will be called frozen.
-        - if $p_i<p_j$, then playeri will be frozen and $player_j$ will gain $p_j−p_i$ power.
-        - if $p_i=p_j$, then both players will be frozen.
+    - `attack` $name_i$ $name_j$
+        - if $p_i$ > $p_j$, then $player_i$ will gain $p_i$ − $p_j$ power and $player_j$ will have no power left and further will be called frozen.
+        - if $p_i$ < $p_j$, then $player_i$ will be frozen and $player_j$ will gain $p_j$ − $p_i$ power.
+        - if $p_i$ = $p_j$, then both players will be frozen.
         - if $player_j$ is not visible, then the $player_i$ will be frozen. 
 
-    - $flip_visibility$ $name_i$ will flip the status of the visibility of the $player_i$.
-    - $heal$ $name_i$ $name_j$ will make $player_i$ give half (ceil the numbers up for both players if needed) of his power to $player_j$ (from the same team).
+    - `flip_visibility` $name_i$ will flip the status of the visibility of the $player_i$.
+    - `heal` $name_i$ $name_j$ will make $player_i$ give half (ceil the numbers up for both players if needed) of his power to $player_j$ (from the same team).
 
-    - $super$ $name_i$ $name_j$ will create a super player instead of existing 2 players (from the same team) with joint power and actions. The power will be $p_i+p_j$ (sum at most 1000, a greater sum should be floored down to 1000) and the visibility will be $True$ and the name assigned to super player will be `S_k`, where $k$ is the index of super player ($k$ begins with 0 and increments for each next new created super player).
+    - `super` $name_i$ $name_j$ will create a super player instead of existing 2 players (from the same team) with joint power and actions. The power will be $p_i$ + $p_j$ (sum at most 1000, a greater sum should be floored down to 1000) and the visibility will be True and the name assigned to super player will be `S_k`, where $k$ is the index of super player ($k$ begins with 0 and increments for each next new created super player).
 
 A frozen player can be healed, then this player will be unfrozen.
 
-A player with visibility equal to $False$ can be healed.
+A player with visibility equal to False can be healed.
 
 A frozen $player_j$ can be in the action in $super$ $name_i$ $name_j$.
 
@@ -40,7 +40,7 @@ You might have a team with zero players, but it is guaranteed that all players h
 
 The cases when you cannot perform the actions, but they should not stop the game and the actions should be ignored:
 
-1. If a player with the visibility equal to $False$ tries to make any action other than $flip_visibility$, then the next warning message should be added to the output file: `"This player can't play"`.
+1. If a player with the visibility equal to $False$ tries to make any action other than flip_visibility, then the next warning message should be added to the output file: `"This player can't play"`.
 
 2. If a frozen player tries to make an action, then the next warning message should be added to the output file: `"This player is frozen"`.
 
