@@ -1,0 +1,32 @@
+5
+Harry
+Hermione
+Ron
+Draco
+Ginny
+5
+Munir
+0
+1000
+True
+Alaa
+1
+500
+True
+Mohamad
+2
+650
+True
+Alexandr
+3
+800
+True
+Mikhail
+4
+900
+True
+flip_visibility Alaa
+attack Mohamad Alexandr
+attack Munir Mikhail
+attack Munir Alexandr
+attack Munir Alaa

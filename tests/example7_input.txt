@@ -1,0 +1,32 @@
+3
+Harry
+Hermione
+Darko
+5
+Munir
+0
+1000
+True
+Alaa
+1
+499
+True
+Mohamad
+1
+650
+True
+Alexandr
+1
+250
+True
+Mikhail
+2
+0
+False
+attack Munir Mohamad
+heal Munir Mohamad
+heal Alaa Mohamad
+super Alaa Mohamad
+super S_0 Alexandr
+attack Munir S_1
+super Mikhail Munir

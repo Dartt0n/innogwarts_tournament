@@ -1,0 +1,43 @@
+4
+Harry
+Hermione
+Ron
+Draco
+8
+Gary
+0
+800
+True
+Ronald
+0
+650
+False
+Sybill
+1
+350
+True
+Padma
+1
+900
+True
+Hengist
+2
+190
+False
+Bridget
+2
+589
+True
+Darco
+3
+950
+True
+MARCUS
+3
+469
+True
+attack Gary MARCUS
+attack Darco Ronald
+attack Darco Bridget
+flip_visibility Bridget
+attack Padma Gary
