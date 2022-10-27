@@ -1,0 +1,14 @@
+2
+TeamA
+TeamB
+2
+PlayerA
+0
+100
+False
+PlayerB
+1
+0
+True
+attack PlayerA PlayerA
+attack PlayerA PlayerB

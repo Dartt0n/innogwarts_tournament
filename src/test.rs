@@ -77,4 +77,31 @@ mod tests {
             as_string("tests/example7_solution.txt")
         )
     }
+
+    #[test]
+    fn example_8() {
+        solution("tests/example8_input.txt", "tests/example8_output.txt");
+        assert_eq!(
+            as_string("tests/example8_output.txt"),
+            as_string("tests/example8_solution.txt")
+        )
+    }
+
+    #[test]
+    fn example_9() {
+        solution("tests/example9_input.txt", "tests/example9_output.txt");
+        assert_eq!(
+            as_string("tests/example9_output.txt"),
+            as_string("tests/example9_solution.txt")
+        )
+    }
+
+    #[test]
+    fn example_10() {
+        solution("tests/example10_input.txt", "tests/example10_output.txt");
+        assert_eq!(
+            as_string("tests/example10_output.txt"),
+            as_string("tests/example10_solution.txt")
+        )
+    }
 }
